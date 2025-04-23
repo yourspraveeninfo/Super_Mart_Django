@@ -81,9 +81,9 @@ WSGI_APPLICATION = 'DjangoProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'demo2',
+        'NAME': 'super_mart',
         'USER': 'root',
-        'PASSWORD': '@Praveen11',
+        'PASSWORD': '**********',
         'HOST': 'localhost',
         'PORT': '3306'
     }
