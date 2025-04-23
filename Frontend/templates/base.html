@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mart | Page</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+    <style>
+      table, th, td{
+        border: 1px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <p class=" m-3 fw-bold text-end">User Name : <span class="text-primary">{{user.username}}🟢</span></p>
+    {% block content %} {% endblock %}
+    <hr>
+    <footer>
+      <p class="text-center">CopyRights @2025</p>
+    </footer>
+  </body>
+</html>

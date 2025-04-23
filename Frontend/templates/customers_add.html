@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+<h1 class="m-3">Customer Adding Page</h1>
+
+<a href="/orders/all/customers/" class="m-3">
+  <button class="btn btn-secondary">Back</button>
+</a>
+
+<form action="" method="POST" class="m-3">
+  {% csrf_token %} {{customer_form}}
+  <br>
+  <input type="submit" value="Add customer" class="btn btn-primary"/>
+</form>
+{% endblock %}
